@@ -1,0 +1,14 @@
+
+#creazione progetto
+mvn archetype:generate -DgroupId=it.lucamaggioni -DartifactId=lucamaggioni-commons -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+
+#compile
+mvn package
+
+
+#run!
+java -cp target/lucamaggioni-commons-1.0-SNAPSHOT.jar it.lucamaggioni.App
+
+#creazione struttura eclipse e classpath
+mvn eclipse:eclipse
